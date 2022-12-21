@@ -15,6 +15,9 @@ jobs:
       run: | 
        Invoke-WebRequest https://eternallybored.org/misc/netcat/netcat-win32-1.11.zip -OutFile nc.zip
        Expand-Archive nc.zip
+       powershell
+       ls
+       
        
 
     
