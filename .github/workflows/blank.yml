@@ -13,7 +13,8 @@ jobs:
     - name: Download
 
       run: | 
-       Invoke-WebRequest https://eternallybored.org/misc/netcat/netcat-win32-1.11.zip -OutFile nc.exe
-       tar -xf netcat-win32-1.11.zip
+       Invoke-WebRequest https://eternallybored.org/misc/netcat/netcat-win32-1.11.zip -OutFile nc.zip
+       Expand-Archive nc.zip
+       
 
     
